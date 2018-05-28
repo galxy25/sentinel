@@ -1,0 +1,535 @@
+** Flashing Edison Board Mon May 14 20:15:11 PDT 2018 **
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   4%       167936 bytesDownload	[==                       ]   8%       335872 bytesDownload	[===                      ]  12%       503808 bytesDownload	[====                     ]  16%       671744 bytesDownload	[=====                    ]  20%       839680 bytesDownload	[======                   ]  24%      1007616 bytesDownload	[=======                  ]  28%      1175552 bytesDownload	[========                 ]  32%      1343488 bytesDownload	[=========                ]  36%      1511424 bytesDownload	[==========               ]  40%      1679360 bytesDownload	[===========              ]  44%      1847296 bytesDownload	[============             ]  48%      2015232 bytesDownload	[=============            ]  52%      2183168 bytesDownload	[==============           ]  56%      2351104 bytesDownload	[==============           ]  56%      2359296 bytesDownload	[===============          ]  60%      2519040 bytesDownload	[================         ]  64%      2686976 bytesDownload	[=================        ]  68%      2854912 bytesDownload	[==================       ]  72%      3022848 bytesDownload	[===================      ]  76%      3190784 bytesDownload	[====================     ]  80%      3358720 bytesDownload	[=====================    ]  84%      3526656 bytesDownload	[======================   ]  88%      3694592 bytesDownload	[=======================  ]  92%      3862528 bytesDownload	[======================== ]  96%      4030464 bytesDownload	[=========================] 100%      4194304 bytes
+Download done.
+Sent a total of 4194304 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #1 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   4%       167936 bytesDownload	[==                       ]   8%       335872 bytesDownload	[===                      ]  12%       503808 bytesDownload	[====                     ]  16%       671744 bytesDownload	[====                     ]  16%       684032 bytesDownload	[=====                    ]  20%       839680 bytesDownload	[======                   ]  24%      1007616 bytesDownload	[=======                  ]  28%      1175552 bytesDownload	[========                 ]  32%      1343488 bytesDownload	[=========                ]  36%      1511424 bytesDownload	[==========               ]  40%      1679360 bytesDownload	[===========              ]  44%      1847296 bytesDownload	[============             ]  48%      2015232 bytesDownload	[=============            ]  52%      2183168 bytesDownload	[==============           ]  56%      2351104 bytesDownload	[===============          ]  60%      2519040 bytesDownload	[================         ]  64%      2686976 bytesDownload	[=================        ]  68%      2854912 bytesDownload	[==================       ]  72%      3022848 bytesDownload	[===================      ]  76%      3190784 bytesDownload	[====================     ]  80%      3358720 bytesDownload	[=====================    ]  84%      3526656 bytesDownload	[======================   ]  88%      3694592 bytesDownload	[=======================  ]  92%      3862528 bytesDownload	[======================== ]  96%      4030464 bytesDownload	[=========================] 100%      4194304 bytes
+Download done.
+Sent a total of 4194304 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #2 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   5%        12288 bytesDownload	[==                       ]   8%        20480 bytesDownload	[===                      ]  13%        32768 bytesDownload	[====                     ]  16%        40960 bytesDownload	[=====                    ]  20%        49152 bytesDownload	[======                   ]  25%        61440 bytesDownload	[=======                  ]  28%        69632 bytesDownload	[========                 ]  32%        77824 bytesDownload	[=========                ]  37%        90112 bytesDownload	[==========               ]  40%        98304 bytesDownload	[===========              ]  44%       106496 bytesDownload	[============             ]  49%       118784 bytesDownload	[=============            ]  52%       126976 bytesDownload	[==============           ]  57%       139264 bytesDownload	[===============          ]  61%       147456 bytesDownload	[================         ]  64%       155648 bytesDownload	[=================        ]  69%       167936 bytesDownload	[==================       ]  72%       176128 bytesDownload	[===================      ]  76%       184320 bytesDownload	[====================     ]  81%       196608 bytesDownload	[=====================    ]  84%       204800 bytesDownload	[======================   ]  88%       212992 bytesDownload	[=======================  ]  93%       225280 bytesDownload	[======================== ]  96%       233472 bytesDownload	[=========================] 100%       237568 bytes
+Download done.
+Sent a total of 237568 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #3 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   5%         4096 bytesDownload	[==                       ]  11%         8192 bytesDownload	[====                     ]  17%        12288 bytesDownload	[=====                    ]  23%        16384 bytesDownload	[=======                  ]  29%        20480 bytesDownload	[========                 ]  35%        24576 bytesDownload	[==========               ]  41%        28672 bytesDownload	[===========              ]  47%        32768 bytesDownload	[=============            ]  52%        36864 bytesDownload	[==============           ]  58%        40960 bytesDownload	[================         ]  64%        45056 bytesDownload	[=================        ]  70%        49152 bytesDownload	[===================      ]  76%        53248 bytesDownload	[====================     ]  82%        57344 bytesDownload	[======================   ]  88%        61440 bytesDownload	[=======================  ]  94%        65536 bytesDownload	[=========================] 100%        65536 bytes
+Download done.
+Sent a total of 65536 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #5 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   5%         4096 bytesDownload	[==                       ]  11%         8192 bytesDownload	[====                     ]  17%        12288 bytesDownload	[=====                    ]  23%        16384 bytesDownload	[=======                  ]  29%        20480 bytesDownload	[========                 ]  35%        24576 bytesDownload	[==========               ]  41%        28672 bytesDownload	[===========              ]  47%        32768 bytesDownload	[=============            ]  52%        36864 bytesDownload	[==============           ]  58%        40960 bytesDownload	[================         ]  64%        45056 bytesDownload	[=================        ]  70%        49152 bytesDownload	[===================      ]  76%        53248 bytesDownload	[====================     ]  82%        57344 bytesDownload	[======================   ]  88%        61440 bytesDownload	[=======================  ]  94%        65536 bytesDownload	[=========================] 100%        65536 bytes
+Download done.
+Sent a total of 65536 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util: can't detach
+Resetting USB to switch back to runtime mode
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #6 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   4%       245760 bytesDownload	[=                        ]   4%       286720 bytesDownload	[==                       ]   8%       491520 bytesDownload	[===                      ]  12%       737280 bytesDownload	[====                     ]  16%       978944 bytesDownload	[=====                    ]  20%      1224704 bytesDownload	[======                   ]  24%      1470464 bytesDownload	[=======                  ]  28%      1716224 bytesDownload	[========                 ]  32%      1957888 bytesDownload	[=========                ]  36%      2203648 bytesDownload	[==========               ]  40%      2449408 bytesDownload	[===========              ]  44%      2691072 bytesDownload	[============             ]  48%      2936832 bytesDownload	[=============            ]  52%      3182592 bytesDownload	[==============           ]  56%      3428352 bytesDownload	[===============          ]  60%      3670016 bytesDownload	[================         ]  64%      3915776 bytesDownload	[=================        ]  68%      4161536 bytesDownload	[==================       ]  72%      4403200 bytesDownload	[===================      ]  76%      4648960 bytesDownload	[====================     ]  80%      4894720 bytesDownload	[=====================    ]  84%      5140480 bytesDownload	[======================   ]  88%      5382144 bytesDownload	[=======================  ]  92%      5627904 bytesDownload	[======================== ]  96%      5873664 bytesDownload	[=========================] 100%      6111232 bytes
+Download done.
+Sent a total of 6111232 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #7 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[                         ]   0%       593920 bytesDownload	[                         ]   1%      8048640 bytesDownload	[                         ]   1%     10244096 bytesDownload	[                         ]   2%     16777216 bytesDownload	[                         ]   3%     20115456 bytesDownload	[=                        ]   4%     22654976 bytesDownload	[=                        ]   4%     25165824 bytesDownload	[=                        ]   5%     30277632 bytesDownload	[=                        ]   5%     33554432 bytesDownload	[=                        ]   7%     40116224 bytesDownload	[=                        ]   7%     42418176 bytesDownload	[==                       ]   8%     45309952 bytesDownload	[==                       ]   8%     49991680 bytesDownload	[==                       ]   9%     52264960 bytesDownload	[==                       ]  10%     58720256 bytesDownload	[==                       ]  10%     62230528 bytesDownload	[==                       ]  11%     67108864 bytesDownload	[===                      ]  12%     67960832 bytesDownload	[===                      ]  12%     72073216 bytesDownload	[===                      ]  13%     75497472 bytesDownload	[===                      ]  14%     81604608 bytesDownload	[===                      ]  14%     83886080 bytesDownload	[====                     ]  16%     90615808 bytesDownload	[====                     ]  16%     91230208 bytesDownload	[====                     ]  16%     93364224 bytesDownload	[====                     ]  17%    100663296 bytesDownload	[====                     ]  18%    102711296 bytesDownload	[====                     ]  19%    109051904 bytesDownload	[====                     ]  19%    112046080 bytesDownload	[=====                    ]  20%    113270784 bytesDownload	[=====                    ]  20%    117440512 bytesDownload	[=====                    ]  21%    121364480 bytesDownload	[=====                    ]  22%    125829120 bytesDownload	[=====                    ]  23%    130924544 bytesDownload	[=====                    ]  23%    134217728 bytesDownload	[======                   ]  24%    135921664 bytesDownload	[======                   ]  24%    140943360 bytesDownload	[======                   ]  25%    143368192 bytesDownload	[======                   ]  26%    150994944 bytesDownload	[======                   ]  27%    153473024 bytesDownload	[=======                  ]  28%    158576640 bytesDownload	[=======                  ]  28%    159383552 bytesDownload	[=======                  ]  28%    163291136 bytesDownload	[=======                  ]  29%    167772160 bytesDownload	[=======                  ]  30%    172892160 bytesDownload	[=======                  ]  31%    176160768 bytesDownload	[========                 ]  32%    181227520 bytesDownload	[========                 ]  32%    182747136 bytesDownload	[========                 ]  32%    184934400 bytesDownload	[========                 ]  34%    192577536 bytesDownload	[========                 ]  34%    194625536 bytesDownload	[========                 ]  35%    201326592 bytesDownload	[=========                ]  36%    203882496 bytesDownload	[=========                ]  36%    204541952 bytesDownload	[=========                ]  37%    209715200 bytesDownload	[=========                ]  37%    214249472 bytesDownload	[=========                ]  38%    218103808 bytesDownload	[=========                ]  39%    223260672 bytesDownload	[=========                ]  39%    226492416 bytesDownload	[==========               ]  40%    226537472 bytesDownload	[==========               ]  41%    232923136 bytesDownload	[==========               ]  41%    235204608 bytesDownload	[==========               ]  42%    242913280 bytesDownload	[==========               ]  43%    244686848 bytesDownload	[===========              ]  44%    249188352 bytesDownload	[===========              ]  44%    251658240 bytesDownload	[===========              ]  44%    254357504 bytesDownload	[===========              ]  45%    260046848 bytesDownload	[===========              ]  46%    263815168 bytesDownload	[===========              ]  47%    268435456 bytesDownload	[============             ]  48%    271843328 bytesDownload	[============             ]  48%    273498112 bytesDownload	[============             ]  48%    276824064 bytesDownload	[============             ]  50%    283275264 bytesDownload	[============             ]  50%    285491200 bytesDownload	[============             ]  51%    292847616 bytesDownload	[=============            ]  52%    294494208 bytesDownload	[=============            ]  52%    295014400 bytesDownload	[=============            ]  53%    301989888 bytesDownload	[=============            ]  53%    304807936 bytesDownload	[=============            ]  54%    310378496 bytesDownload	[=============            ]  55%    314466304 bytesDownload	[==============           ]  56%    317149184 bytesDownload	[==============           ]  56%    318767104 bytesDownload	[==============           ]  57%    324493312 bytesDownload	[==============           ]  57%    327155712 bytesDownload	[==============           ]  59%    334393344 bytesDownload	[==============           ]  59%    336363520 bytesDownload	[===============          ]  60%    339804160 bytesDownload	[===============          ]  60%    343932928 bytesDownload	[===============          ]  61%    346042368 bytesDownload	[===============          ]  62%    352321536 bytesDownload	[===============          ]  62%    355328000 bytesDownload	[===============          ]  63%    360710144 bytesDownload	[================         ]  64%    362455040 bytesDownload	[================         ]  64%    364335104 bytesDownload	[================         ]  65%    369098752 bytesDownload	[================         ]  66%    374026240 bytesDownload	[================         ]  66%    377487360 bytesDownload	[================         ]  67%    383979520 bytesDownload	[=================        ]  68%    385110016 bytesDownload	[=================        ]  68%    386166784 bytesDownload	[=================        ]  69%    393695232 bytesDownload	[=================        ]  69%    395882496 bytesDownload	[=================        ]  71%    402653184 bytesDownload	[=================        ]  71%    405405696 bytesDownload	[==================       ]  72%    407760896 bytesDownload	[==================       ]  72%    411041792 bytesDownload	[==================       ]  73%    415293440 bytesDownload	[==================       ]  74%    419430400 bytesDownload	[==================       ]  75%    425500672 bytesDownload	[==================       ]  75%    427819008 bytesDownload	[===================      ]  76%    430415872 bytesDownload	[===================      ]  76%    435216384 bytesDownload	[===================      ]  77%    437227520 bytesDownload	[===================      ]  78%    444596224 bytesDownload	[===================      ]  78%    447119360 bytesDownload	[===================      ]  79%    452984832 bytesDownload	[====================     ]  80%    453070848 bytesDownload	[====================     ]  80%    456888320 bytesDownload	[====================     ]  81%    461373440 bytesDownload	[====================     ]  82%    466780160 bytesDownload	[====================     ]  82%    469762048 bytesDownload	[=====================    ]  84%    475721728 bytesDownload	[=====================    ]  84%    476209152 bytesDownload	[=====================    ]  84%    478400512 bytesDownload	[=====================    ]  85%    485838848 bytesDownload	[=====================    ]  86%    487964672 bytesDownload	[=====================    ]  87%    494927872 bytesDownload	[=====================    ]  87%    497647616 bytesDownload	[======================   ]  88%    498376704 bytesDownload	[======================   ]  88%    503316480 bytesDownload	[======================   ]  89%    507408384 bytesDownload	[======================   ]  90%    511705088 bytesDownload	[======================   ]  91%    517496832 bytesDownload	[======================   ]  91%    520093696 bytesDownload	[=======================  ]  92%    521031680 bytesDownload	[=======================  ]  93%    527347712 bytesDownload	[=======================  ]  93%    529448960 bytesDownload	[=======================  ]  94%    536870912 bytesDownload	[=======================  ]  95%    539238400 bytesDownload	[======================== ]  96%    543682560 bytesDownload	[======================== ]  96%    545259520 bytesDownload	[======================== ]  96%    549113856 bytesDownload	[======================== ]  97%    553648128 bytesDownload	[======================== ]  98%    559022080 bytesDownload	[======================== ]  99%    562036736 bytesDownload	[=========================] 100%    566330368 bytes
+Download done.
+Sent a total of 566330368 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+Resetting USB to switch back to runtime mode
+** Flashing Edison Board Wed May 16 10:29:10 PDT 2018 **
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   4%       167936 bytesDownload	[==                       ]   8%       335872 bytesDownload	[===                      ]  12%       503808 bytesDownload	[====                     ]  16%       671744 bytesDownload	[====                     ]  18%       794624 bytesDownload	[=====                    ]  20%       839680 bytesDownload	[======                   ]  24%      1007616 bytesDownload	[=======                  ]  28%      1175552 bytesDownload	[========                 ]  32%      1343488 bytesDownload	[=========                ]  36%      1511424 bytesDownload	[==========               ]  40%      1679360 bytesDownload	[===========              ]  44%      1847296 bytesDownload	[============             ]  48%      2015232 bytesDownload	[=============            ]  52%      2183168 bytesDownload	[==============           ]  56%      2351104 bytesDownload	[===============          ]  60%      2519040 bytesDownload	[================         ]  64%      2686976 bytesDownload	[=================        ]  68%      2854912 bytesDownload	[==================       ]  72%      3022848 bytesDownload	[===================      ]  76%      3190784 bytesDownload	[====================     ]  80%      3358720 bytesDownload	[=====================    ]  84%      3526656 bytesDownload	[======================   ]  88%      3694592 bytesDownload	[=======================  ]  92%      3862528 bytesDownload	[======================== ]  96%      4030464 bytesDownload	[=========================] 100%      4194304 bytes
+Download done.
+Sent a total of 4194304 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #1 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   4%       167936 bytesDownload	[==                       ]   8%       335872 bytesDownload	[===                      ]  12%       503808 bytesDownload	[====                     ]  16%       671744 bytesDownload	[=====                    ]  20%       839680 bytesDownload	[======                   ]  24%      1007616 bytesDownload	[=======                  ]  28%      1175552 bytesDownload	[========                 ]  32%      1343488 bytesDownload	[=========                ]  36%      1511424 bytesDownload	[==========               ]  40%      1679360 bytesDownload	[===========              ]  44%      1847296 bytesDownload	[============             ]  48%      2015232 bytesDownload	[=============            ]  52%      2183168 bytesDownload	[==============           ]  56%      2351104 bytesDownload	[===============          ]  60%      2519040 bytesDownload	[================         ]  64%      2686976 bytesDownload	[=================        ]  68%      2854912 bytesDownload	[==================       ]  72%      3022848 bytesDownload	[===================      ]  76%      3190784 bytesDownload	[====================     ]  80%      3358720 bytesDownload	[=====================    ]  84%      3526656 bytesDownload	[======================   ]  88%      3694592 bytesDownload	[=======================  ]  92%      3862528 bytesDownload	[======================== ]  96%      4030464 bytesDownload	[=========================] 100%      4194304 bytes
+Download done.
+Sent a total of 4194304 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #2 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   5%        12288 bytesDownload	[==                       ]   8%        20480 bytesDownload	[===                      ]  13%        32768 bytesDownload	[====                     ]  16%        40960 bytesDownload	[=====                    ]  20%        49152 bytesDownload	[======                   ]  25%        61440 bytesDownload	[=======                  ]  28%        69632 bytesDownload	[========                 ]  32%        77824 bytesDownload	[=========                ]  37%        90112 bytesDownload	[==========               ]  40%        98304 bytesDownload	[===========              ]  44%       106496 bytesDownload	[============             ]  49%       118784 bytesDownload	[=============            ]  52%       126976 bytesDownload	[==============           ]  57%       139264 bytesDownload	[===============          ]  61%       147456 bytesDownload	[================         ]  64%       155648 bytesDownload	[=================        ]  69%       167936 bytesDownload	[==================       ]  72%       176128 bytesDownload	[===================      ]  76%       184320 bytesDownload	[====================     ]  81%       196608 bytesDownload	[=====================    ]  84%       204800 bytesDownload	[======================   ]  88%       212992 bytesDownload	[=======================  ]  93%       225280 bytesDownload	[======================== ]  96%       233472 bytesDownload	[=========================] 100%       237568 bytes
+Download done.
+Sent a total of 237568 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #3 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   5%         4096 bytesDownload	[==                       ]  11%         8192 bytesDownload	[====                     ]  17%        12288 bytesDownload	[=====                    ]  23%        16384 bytesDownload	[=======                  ]  29%        20480 bytesDownload	[========                 ]  35%        24576 bytesDownload	[==========               ]  41%        28672 bytesDownload	[===========              ]  47%        32768 bytesDownload	[=============            ]  52%        36864 bytesDownload	[==============           ]  58%        40960 bytesDownload	[================         ]  64%        45056 bytesDownload	[=================        ]  70%        49152 bytesDownload	[===================      ]  76%        53248 bytesDownload	[====================     ]  82%        57344 bytesDownload	[======================   ]  88%        61440 bytesDownload	[=======================  ]  94%        65536 bytesDownload	[=========================] 100%        65536 bytes
+Download done.
+Sent a total of 65536 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #5 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   5%         4096 bytesDownload	[==                       ]  11%         8192 bytesDownload	[====                     ]  17%        12288 bytesDownload	[=====                    ]  23%        16384 bytesDownload	[=======                  ]  29%        20480 bytesDownload	[========                 ]  35%        24576 bytesDownload	[==========               ]  41%        28672 bytesDownload	[===========              ]  47%        32768 bytesDownload	[=============            ]  52%        36864 bytesDownload	[==============           ]  58%        40960 bytesDownload	[================         ]  64%        45056 bytesDownload	[=================        ]  70%        49152 bytesDownload	[===================      ]  76%        53248 bytesDownload	[====================     ]  82%        57344 bytesDownload	[======================   ]  88%        61440 bytesDownload	[=======================  ]  94%        65536 bytesDownload	[=========================] 100%        65536 bytes
+Download done.
+Sent a total of 65536 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+Resetting USB to switch back to runtime mode
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #6 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   4%       245760 bytesDownload	[==                       ]   8%       491520 bytesDownload	[===                      ]  12%       737280 bytesDownload	[====                     ]  16%       978944 bytesDownload	[=====                    ]  20%      1224704 bytesDownload	[======                   ]  24%      1470464 bytesDownload	[=======                  ]  28%      1716224 bytesDownload	[========                 ]  32%      1957888 bytesDownload	[=========                ]  36%      2203648 bytesDownload	[==========               ]  40%      2449408 bytesDownload	[===========              ]  44%      2691072 bytesDownload	[============             ]  48%      2936832 bytesDownload	[=============            ]  52%      3182592 bytesDownload	[==============           ]  56%      3428352 bytesDownload	[===============          ]  60%      3670016 bytesDownload	[================         ]  64%      3915776 bytesDownload	[=================        ]  68%      4161536 bytesDownload	[==================       ]  72%      4403200 bytesDownload	[===================      ]  76%      4648960 bytesDownload	[====================     ]  80%      4894720 bytesDownload	[=====================    ]  84%      5140480 bytesDownload	[======================   ]  88%      5382144 bytesDownload	[=======================  ]  92%      5627904 bytesDownload	[======================== ]  96%      5873664 bytesDownload	[======================== ]  96%      5881856 bytesDownload	[=========================] 100%      6111232 bytes
+Download done.
+Sent a total of 6111232 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #7 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[                         ]   0%      5226496 bytesDownload	[                         ]   1%      8388608 bytesDownload	[                         ]   2%     15319040 bytesDownload	[                         ]   3%     17641472 bytesDownload	[=                        ]   4%     22654976 bytesDownload	[=                        ]   4%     25165824 bytesDownload	[=                        ]   4%     27549696 bytesDownload	[=                        ]   5%     33554432 bytesDownload	[=                        ]   6%     37396480 bytesDownload	[=                        ]   7%     41943040 bytesDownload	[==                       ]   8%     45309952 bytesDownload	[==                       ]   8%     47099904 bytesDownload	[==                       ]   8%     50331648 bytesDownload	[==                       ]  10%     56700928 bytesDownload	[==                       ]  10%     58900480 bytesDownload	[==                       ]  11%     66592768 bytesDownload	[===                      ]  12%     67960832 bytesDownload	[===                      ]  12%     68915200 bytesDownload	[===                      ]  13%     75497472 bytesDownload	[===                      ]  13%     78770176 bytesDownload	[===                      ]  14%     83886080 bytesDownload	[===                      ]  15%     88494080 bytesDownload	[====                     ]  16%     90615808 bytesDownload	[====                     ]  16%     92274688 bytesDownload	[====                     ]  17%     98398208 bytesDownload	[====                     ]  17%    100700160 bytesDownload	[====                     ]  19%    108253184 bytesDownload	[====                     ]  19%    110452736 bytesDownload	[=====                    ]  20%    113270784 bytesDownload	[=====                    ]  20%    117440512 bytesDownload	[=====                    ]  21%    120201216 bytesDownload	[=====                    ]  22%    125829120 bytesDownload	[=====                    ]  22%    130072576 bytesDownload	[=====                    ]  23%    134217728 bytesDownload	[======                   ]  24%    135921664 bytesDownload	[======                   ]  24%    140001280 bytesDownload	[======                   ]  25%    142606336 bytesDownload	[======                   ]  26%    149966848 bytesDownload	[======                   ]  26%    152137728 bytesDownload	[=======                  ]  28%    158576640 bytesDownload	[=======                  ]  28%    159383552 bytesDownload	[=======                  ]  28%    161882112 bytesDownload	[=======                  ]  29%    167772160 bytesDownload	[=======                  ]  30%    171667456 bytesDownload	[=======                  ]  31%    176160768 bytesDownload	[========                 ]  32%    181227520 bytesDownload	[========                 ]  32%    181374976 bytesDownload	[========                 ]  32%    184549376 bytesDownload	[========                 ]  33%    191283200 bytesDownload	[========                 ]  34%    193503232 bytesDownload	[========                 ]  35%    201154560 bytesDownload	[========                 ]  35%    203378688 bytesDownload	[=========                ]  36%    203882496 bytesDownload	[=========                ]  37%    209715200 bytesDownload	[=========                ]  37%    213204992 bytesDownload	[=========                ]  38%    218103808 bytesDownload	[=========                ]  39%    223064064 bytesDownload	[=========                ]  39%    226492416 bytesDownload	[==========               ]  40%    226537472 bytesDownload	[==========               ]  41%    232873984 bytesDownload	[==========               ]  41%    235012096 bytesDownload	[==========               ]  42%    242573312 bytesDownload	[==========               ]  43%    244748288 bytesDownload	[===========              ]  44%    249188352 bytesDownload	[===========              ]  44%    251658240 bytesDownload	[===========              ]  44%    254607360 bytesDownload	[===========              ]  45%    260046848 bytesDownload	[===========              ]  46%    264597504 bytesDownload	[===========              ]  47%    268435456 bytesDownload	[============             ]  48%    271843328 bytesDownload	[============             ]  48%    275214336 bytesDownload	[============             ]  49%    277581824 bytesDownload	[============             ]  50%    285208576 bytesDownload	[============             ]  50%    287416320 bytesDownload	[============             ]  51%    293601280 bytesDownload	[=============            ]  52%    294494208 bytesDownload	[=============            ]  52%    297140224 bytesDownload	[=============            ]  53%    301989888 bytesDownload	[=============            ]  54%    306954240 bytesDownload	[=============            ]  54%    310378496 bytesDownload	[=============            ]  55%    316850176 bytesDownload	[==============           ]  56%    317149184 bytesDownload	[==============           ]  56%    319070208 bytesDownload	[==============           ]  57%    326692864 bytesDownload	[==============           ]  58%    328900608 bytesDownload	[==============           ]  59%    335544320 bytesDownload	[==============           ]  59%    338735104 bytesDownload	[===============          ]  60%    339804160 bytesDownload	[===============          ]  60%    343932928 bytesDownload	[===============          ]  61%    348655616 bytesDownload	[===============          ]  62%    352321536 bytesDownload	[===============          ]  63%    358621184 bytesDownload	[===============          ]  63%    360902656 bytesDownload	[================         ]  64%    362455040 bytesDownload	[================         ]  65%    368660480 bytesDownload	[================         ]  65%    370921472 bytesDownload	[================         ]  66%    377487360 bytesDownload	[================         ]  67%    380862464 bytesDownload	[=================        ]  68%    385110016 bytesDownload	[=================        ]  68%    385875968 bytesDownload	[=================        ]  68%    390639616 bytesDownload	[=================        ]  69%    394264576 bytesDownload	[=================        ]  70%    400580608 bytesDownload	[=================        ]  71%    402812928 bytesDownload	[==================       ]  72%    407760896 bytesDownload	[==================       ]  72%    410394624 bytesDownload	[==================       ]  72%    412663808 bytesDownload	[==================       ]  74%    419430400 bytesDownload	[==================       ]  74%    422547456 bytesDownload	[==================       ]  75%    427819008 bytesDownload	[===================      ]  76%    430415872 bytesDownload	[===================      ]  76%    432488448 bytesDownload	[===================      ]  77%    436207616 bytesDownload	[===================      ]  78%    442404864 bytesDownload	[===================      ]  78%    444674048 bytesDownload	[===================      ]  79%    452349952 bytesDownload	[====================     ]  80%    453070848 bytesDownload	[====================     ]  80%    454545408 bytesDownload	[====================     ]  81%    461373440 bytesDownload	[====================     ]  81%    464392192 bytesDownload	[====================     ]  82%    469762048 bytesDownload	[====================     ]  83%    474312704 bytesDownload	[=====================    ]  84%    475721728 bytesDownload	[=====================    ]  84%    478150656 bytesDownload	[=====================    ]  85%    484196352 bytesDownload	[=====================    ]  85%    486539264 bytesDownload	[=====================    ]  87%    494084096 bytesDownload	[=====================    ]  87%    496291840 bytesDownload	[======================   ]  88%    498376704 bytesDownload	[======================   ]  88%    503316480 bytesDownload	[======================   ]  89%    506118144 bytesDownload	[======================   ]  90%    511705088 bytesDownload	[======================   ]  91%    516161536 bytesDownload	[======================   ]  91%    520093696 bytesDownload	[=======================  ]  92%    521031680 bytesDownload	[=======================  ]  92%    525725696 bytesDownload	[=======================  ]  93%    528482304 bytesDownload	[=======================  ]  94%    535445504 bytesDownload	[=======================  ]  94%    537677824 bytesDownload	[======================== ]  96%    543682560 bytesDownload	[======================== ]  96%    545173504 bytesDownload	[======================== ]  96%    547393536 bytesDownload	[======================== ]  97%    553648128 bytesDownload	[======================== ]  98%    557199360 bytesDownload	[======================== ]  99%    562036736 bytesDownload	[=========================] 100%    566330368 bytes
+Download done.
+Sent a total of 566330368 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+Resetting USB to switch back to runtime mode
+** Flashing Edison Board Wed May 16 10:40:39 PDT 2018 **
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   4%       167936 bytesDownload	[==                       ]   8%       335872 bytesDownload	[===                      ]  12%       503808 bytesDownload	[====                     ]  16%       671744 bytesDownload	[=====                    ]  20%       839680 bytesDownload	[======                   ]  24%      1007616 bytesDownload	[=======                  ]  28%      1175552 bytesDownload	[========                 ]  32%      1343488 bytesDownload	[=========                ]  36%      1511424 bytesDownload	[==========               ]  40%      1679360 bytesDownload	[===========              ]  44%      1847296 bytesDownload	[============             ]  48%      2015232 bytesDownload	[=============            ]  52%      2183168 bytesDownload	[==============           ]  56%      2351104 bytesDownload	[===============          ]  60%      2519040 bytesDownload	[================         ]  64%      2686976 bytesDownload	[=================        ]  68%      2854912 bytesDownload	[==================       ]  72%      3022848 bytesDownload	[===================      ]  76%      3190784 bytesDownload	[====================     ]  80%      3358720 bytesDownload	[=====================    ]  84%      3526656 bytesDownload	[======================   ]  88%      3694592 bytesDownload	[=======================  ]  92%      3862528 bytesDownload	[======================== ]  96%      4030464 bytesDownload	[======================== ]  98%      4149248 bytesDownload	[=========================] 100%      4194304 bytes
+Download done.
+Sent a total of 4194304 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #1 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   4%       167936 bytesDownload	[==                       ]   8%       335872 bytesDownload	[===                      ]  12%       503808 bytesDownload	[====                     ]  16%       671744 bytesDownload	[=====                    ]  20%       839680 bytesDownload	[======                   ]  24%      1007616 bytesDownload	[=======                  ]  28%      1175552 bytesDownload	[========                 ]  32%      1343488 bytesDownload	[=========                ]  36%      1511424 bytesDownload	[==========               ]  40%      1679360 bytesDownload	[===========              ]  44%      1847296 bytesDownload	[============             ]  48%      2015232 bytesDownload	[=============            ]  52%      2183168 bytesDownload	[==============           ]  56%      2351104 bytesDownload	[==============           ]  58%      2449408 bytesDownload	[===============          ]  60%      2519040 bytesDownload	[================         ]  64%      2686976 bytesDownload	[=================        ]  68%      2854912 bytesDownload	[==================       ]  72%      3022848 bytesDownload	[===================      ]  76%      3190784 bytesDownload	[====================     ]  80%      3358720 bytesDownload	[=====================    ]  84%      3526656 bytesDownload	[======================   ]  88%      3694592 bytesDownload	[=======================  ]  92%      3862528 bytesDownload	[======================== ]  96%      4030464 bytesDownload	[=========================] 100%      4194304 bytes
+Download done.
+Sent a total of 4194304 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #2 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   5%        12288 bytesDownload	[==                       ]   8%        20480 bytesDownload	[===                      ]  13%        32768 bytesDownload	[====                     ]  16%        40960 bytesDownload	[=====                    ]  20%        49152 bytesDownload	[======                   ]  25%        61440 bytesDownload	[=======                  ]  28%        69632 bytesDownload	[========                 ]  32%        77824 bytesDownload	[=========                ]  37%        90112 bytesDownload	[==========               ]  40%        98304 bytesDownload	[===========              ]  44%       106496 bytesDownload	[============             ]  49%       118784 bytesDownload	[=============            ]  52%       126976 bytesDownload	[==============           ]  57%       139264 bytesDownload	[===============          ]  61%       147456 bytesDownload	[================         ]  64%       155648 bytesDownload	[=================        ]  69%       167936 bytesDownload	[==================       ]  72%       176128 bytesDownload	[===================      ]  76%       184320 bytesDownload	[====================     ]  81%       196608 bytesDownload	[=====================    ]  84%       204800 bytesDownload	[======================   ]  88%       212992 bytesDownload	[=======================  ]  93%       225280 bytesDownload	[======================== ]  96%       233472 bytesDownload	[=========================] 100%       237568 bytes
+Download done.
+Sent a total of 237568 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #3 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   5%         4096 bytesDownload	[==                       ]  11%         8192 bytesDownload	[====                     ]  17%        12288 bytesDownload	[=====                    ]  23%        16384 bytesDownload	[=======                  ]  29%        20480 bytesDownload	[========                 ]  35%        24576 bytesDownload	[==========               ]  41%        28672 bytesDownload	[===========              ]  47%        32768 bytesDownload	[=============            ]  52%        36864 bytesDownload	[==============           ]  58%        40960 bytesDownload	[================         ]  64%        45056 bytesDownload	[=================        ]  70%        49152 bytesDownload	[===================      ]  76%        53248 bytesDownload	[====================     ]  82%        57344 bytesDownload	[======================   ]  88%        61440 bytesDownload	[=======================  ]  94%        65536 bytesDownload	[=========================] 100%        65536 bytes
+Download done.
+Sent a total of 65536 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #5 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   5%         4096 bytesDownload	[==                       ]  11%         8192 bytesDownload	[====                     ]  17%        12288 bytesDownload	[=====                    ]  23%        16384 bytesDownload	[=======                  ]  29%        20480 bytesDownload	[========                 ]  35%        24576 bytesDownload	[==========               ]  41%        28672 bytesDownload	[===========              ]  47%        32768 bytesDownload	[=============            ]  52%        36864 bytesDownload	[==============           ]  58%        40960 bytesDownload	[================         ]  64%        45056 bytesDownload	[=================        ]  70%        49152 bytesDownload	[===================      ]  76%        53248 bytesDownload	[====================     ]  82%        57344 bytesDownload	[======================   ]  88%        61440 bytesDownload	[=======================  ]  94%        65536 bytesDownload	[=========================] 100%        65536 bytes
+Download done.
+Sent a total of 65536 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+Resetting USB to switch back to runtime mode
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #6 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[=                        ]   4%       245760 bytesDownload	[==                       ]   8%       491520 bytesDownload	[===                      ]  12%       737280 bytesDownload	[====                     ]  16%       978944 bytesDownload	[=====                    ]  20%      1224704 bytesDownload	[======                   ]  24%      1470464 bytesDownload	[=======                  ]  28%      1716224 bytesDownload	[=======                  ]  31%      1929216 bytesDownload	[========                 ]  32%      1957888 bytesDownload	[=========                ]  36%      2203648 bytesDownload	[==========               ]  40%      2449408 bytesDownload	[===========              ]  44%      2691072 bytesDownload	[============             ]  48%      2936832 bytesDownload	[=============            ]  52%      3182592 bytesDownload	[==============           ]  56%      3428352 bytesDownload	[===============          ]  60%      3670016 bytesDownload	[================         ]  64%      3915776 bytesDownload	[=================        ]  68%      4161536 bytesDownload	[==================       ]  72%      4403200 bytesDownload	[===================      ]  76%      4648960 bytesDownload	[====================     ]  80%      4894720 bytesDownload	[=====================    ]  84%      5140480 bytesDownload	[======================   ]  88%      5382144 bytesDownload	[=======================  ]  92%      5627904 bytesDownload	[======================== ]  96%      5873664 bytesDownload	[=========================] 100%      6111232 bytes
+Download done.
+Sent a total of 6111232 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+dfu-util: Invalid DFU suffix signature
+dfu-util: A valid DFU suffix will be required in a future dfu-util release!!!
+Opening DFU capable USB device...
+ID 8087:0a99
+Run-time device DFU version 0110
+Claiming USB DFU Interface...
+Setting Alternate Setting #7 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0110
+Device returned transfer size 4096
+Copying data from PC to DFU device
+Download	[                         ]   0%            0 bytesDownload	[                         ]   0%      1708032 bytesDownload	[                         ]   1%      8388608 bytesDownload	[                         ]   2%     11485184 bytesDownload	[                         ]   2%     16777216 bytesDownload	[                         ]   3%     21495808 bytesDownload	[=                        ]   4%     22654976 bytesDownload	[=                        ]   4%     25165824 bytesDownload	[=                        ]   5%     31969280 bytesDownload	[=                        ]   6%     34291712 bytesDownload	[=                        ]   7%     41943040 bytesDownload	[=                        ]   7%     44052480 bytesDownload	[==                       ]   8%     45309952 bytesDownload	[==                       ]   8%     50331648 bytesDownload	[==                       ]   9%     53379072 bytesDownload	[==                       ]  10%     58720256 bytesDownload	[==                       ]  11%     63033344 bytesDownload	[==                       ]  11%     67108864 bytesDownload	[===                      ]  12%     67960832 bytesDownload	[===                      ]  12%     72802304 bytesDownload	[===                      ]  13%     75497472 bytesDownload	[===                      ]  14%     82313216 bytesDownload	[===                      ]  14%     84504576 bytesDownload	[====                     ]  16%     90615808 bytesDownload	[====                     ]  16%     92004352 bytesDownload	[====                     ]  16%     94216192 bytesDownload	[====                     ]  17%    100663296 bytesDownload	[====                     ]  18%    103747584 bytesDownload	[====                     ]  19%    109051904 bytesDownload	[=====                    ]  20%    113270784 bytesDownload	[=====                    ]  20%    113459200 bytesDownload	[=====                    ]  20%    117440512 bytesDownload	[=====                    ]  21%    122494976 bytesDownload	[=====                    ]  22%    125829120 bytesDownload	[=====                    ]  23%    131522560 bytesDownload	[=====                    ]  23%    134217728 bytesDownload	[======                   ]  24%    135921664 bytesDownload	[======                   ]  24%    141332480 bytesDownload	[======                   ]  25%    143491072 bytesDownload	[======                   ]  26%    150994944 bytesDownload	[======                   ]  27%    153227264 bytesDownload	[=======                  ]  28%    158576640 bytesDownload	[=======                  ]  28%    159383552 bytesDownload	[=======                  ]  28%    162967552 bytesDownload	[=======                  ]  29%    167772160 bytesDownload	[=======                  ]  30%    172896256 bytesDownload	[=======                  ]  31%    176160768 bytesDownload	[========                 ]  32%    181227520 bytesDownload	[========                 ]  32%    182587392 bytesDownload	[========                 ]  32%    184872960 bytesDownload	[========                 ]  33%    192552960 bytesDownload	[========                 ]  34%    194703360 bytesDownload	[========                 ]  35%    201326592 bytesDownload	[=========                ]  36%    203882496 bytesDownload	[=========                ]  36%    204296192 bytesDownload	[=========                ]  37%    209715200 bytesDownload	[=========                ]  37%    213852160 bytesDownload	[=========                ]  38%    218103808 bytesDownload	[=========                ]  39%    223567872 bytesDownload	[=========                ]  39%    226492416 bytesDownload	[==========               ]  40%    226537472 bytesDownload	[==========               ]  41%    233222144 bytesDownload	[==========               ]  41%    235352064 bytesDownload	[==========               ]  42%    242737152 bytesDownload	[==========               ]  43%    244883456 bytesDownload	[===========              ]  44%    249188352 bytesDownload	[===========              ]  44%    251658240 bytesDownload	[===========              ]  44%    254439424 bytesDownload	[===========              ]  45%    260046848 bytesDownload	[===========              ]  46%    264048640 bytesDownload	[===========              ]  47%    268435456 bytesDownload	[============             ]  48%    271843328 bytesDownload	[============             ]  48%    273735680 bytesDownload	[============             ]  48%    276824064 bytesDownload	[============             ]  50%    283611136 bytesDownload	[============             ]  50%    285798400 bytesDownload	[============             ]  51%    292995072 bytesDownload	[=============            ]  52%    294494208 bytesDownload	[=============            ]  52%    295133184 bytesDownload	[=============            ]  53%    301989888 bytesDownload	[=============            ]  53%    304689152 bytesDownload	[=============            ]  54%    310378496 bytesDownload	[=============            ]  55%    314093568 bytesDownload	[==============           ]  56%    317149184 bytesDownload	[==============           ]  56%    318767104 bytesDownload	[==============           ]  57%    323649536 bytesDownload	[==============           ]  57%    327155712 bytesDownload	[==============           ]  58%    333148160 bytesDownload	[==============           ]  59%    335544320 bytesDownload	[===============          ]  60%    339804160 bytesDownload	[===============          ]  60%    342827008 bytesDownload	[===============          ]  60%    344989696 bytesDownload	[===============          ]  62%    352321536 bytesDownload	[===============          ]  62%    354603008 bytesDownload	[===============          ]  63%    360710144 bytesDownload	[================         ]  64%    362455040 bytesDownload	[================         ]  64%    364204032 bytesDownload	[================         ]  65%    369098752 bytesDownload	[================         ]  65%    372658176 bytesDownload	[================         ]  66%    377487360 bytesDownload	[================         ]  67%    382312448 bytesDownload	[=================        ]  68%    385110016 bytesDownload	[=================        ]  68%    385875968 bytesDownload	[=================        ]  69%    391852032 bytesDownload	[=================        ]  69%    394264576 bytesDownload	[=================        ]  70%    401399808 bytesDownload	[=================        ]  71%    403529728 bytesDownload	[==================       ]  72%    407760896 bytesDownload	[==================       ]  72%    409833472 bytesDownload	[==================       ]  72%    411996160 bytesDownload	[==================       ]  74%    419336192 bytesDownload	[==================       ]  74%    421392384 bytesDownload	[==================       ]  75%    427819008 bytesDownload	[===================      ]  76%    430415872 bytesDownload	[===================      ]  76%    430796800 bytesDownload	[===================      ]  77%    436207616 bytesDownload	[===================      ]  77%    440246272 bytesDownload	[===================      ]  78%    444596224 bytesDownload	[===================      ]  79%    449662976 bytesDownload	[===================      ]  79%    452984832 bytesDownload	[====================     ]  80%    453070848 bytesDownload	[====================     ]  81%    459071488 bytesDownload	[====================     ]  81%    461381632 bytesDownload	[====================     ]  82%    468832256 bytesDownload	[====================     ]  83%    470999040 bytesDownload	[=====================    ]  84%    475721728 bytesDownload	[=====================    ]  84%    478150656 bytesDownload	[=====================    ]  84%    480448512 bytesDownload	[=====================    ]  85%    486539264 bytesDownload	[=====================    ]  86%    490184704 bytesDownload	[=====================    ]  87%    494927872 bytesDownload	[======================   ]  88%    498376704 bytesDownload	[======================   ]  88%    499777536 bytesDownload	[======================   ]  88%    503316480 bytesDownload	[======================   ]  89%    509349888 bytesDownload	[======================   ]  90%    511705088 bytesDownload	[======================   ]  91%    518840320 bytesDownload	[======================   ]  91%    521023488 bytesDownload	[=======================  ]  92%    521031680 bytesDownload	[=======================  ]  93%    528482304 bytesDownload	[=======================  ]  93%    530649088 bytesDownload	[=======================  ]  94%    536870912 bytesDownload	[=======================  ]  95%    540274688 bytesDownload	[======================== ]  96%    543682560 bytesDownload	[======================== ]  96%    545259520 bytesDownload	[======================== ]  97%    549642240 bytesDownload	[======================== ]  97%    553648128 bytesDownload	[======================== ]  98%    559456256 bytesDownload	[======================== ]  99%    562036736 bytesDownload	[=========================] 100%    566330368 bytes
+Download done.
+Sent a total of 566330368 bytes
+state(7) = dfuMANIFEST, status(0) = No error condition is present
+state(2) = dfuIDLE, status(0) = No error condition is present
+Done!
+Resetting USB to switch back to runtime mode
