@@ -9,7 +9,7 @@ Segmenting, Serving, and Sweeping recorded video
     Public IP addressable server with public Internet connectivity
     'puter
 ## Instructions
-    1. Prune
+    1. Gate
         * Allow ssh access to "cloud" server from Sentinel flow service network
         * Allow outbound connections on port 8000
         * Add functions in ./bashrc.sh to ~/.bashrc
@@ -24,4 +24,15 @@ Segmenting, Serving, and Sweeping recorded video
         * $> bg_hls_server
     4. Harvest
         * http://HOSTNAME:8000/player.html
+    5. Prune
+        *
+        ```
+        #write out current crontab
+        crontab -l > mycron
+        #echo new cron into cron file
+        echo "@daily /root/vod-sweep.sh" >> mycron
+        #install new cron file
+        crontab mycron
+        rm mycron
+        ```
 ## Errata
