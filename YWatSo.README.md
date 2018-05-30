@@ -16,13 +16,13 @@
     4 the lolz, err, to provide proof of resourcefulness, skill, and reasoning in the domain of streaming media and server-side programming.
 
 ### Non Goals
-    Production/$ services or [devices](https://www.apple.com/shop/product/HL982VC/A/logitech-circle-2-indoor-outdoor-weatherproof-wired-security-camera)
+   Production/$ services or [devices](https://www.apple.com/shop/product/HL982VC/A/logitech-circle-2-indoor-outdoor-weatherproof-wired-security-camera)
 
 ## What
 
 ### Pictures
-    ![Alt Project Sentinel Overview](./ProjectSentinelOverview.png)
-    ![Alt Project Sentinel Overview](./FlowView.png)
+   ![Alt Project Sentinel Overview](./ProjectSentinelOverview.png)
+   ![Alt Project Sentinel Overview](./FlowView.png)
 ### Words
     I have a home.
     Video is captured by a camera in my home.
