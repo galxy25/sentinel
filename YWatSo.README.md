@@ -10,9 +10,13 @@
 
 ### Goals
 Ability to view live stream of home entrance.
+
 POC the ability to receive notification of entry into the house.
+
 Point in time verification of home entrance state.
+
 Have a source of visual feedback and continuous flow of realistic conditions, objects, and events in my home that can power future streaming media and Machine Learning projects and goals.
+
 4 the lolz, err, to provide proof of resourcefulness, skill, and reasoning in the domain of streaming media and server-side programming.
 
 ### Non Goals
