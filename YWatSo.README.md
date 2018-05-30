@@ -1,4 +1,4 @@
-#Project Sentinel
+# Project Sentinel
 
 **why** does it need to exist?
 
@@ -6,24 +6,24 @@
 
 **so**, and than what?
 
-##Why
+## Why
 
-###Goals
+### Goals
     Ability to view live stream of home entrance.
     POC the ability to receive notification of entry into the house.
     Point in time verification of home entrance state.
     Have a source of visual feedback and continuous flow of realistic conditions, objects, and events in my home that can power future streaming media and Machine Learning projects and goals.
     4 the lolz, err, to provide proof of resourcefulness, skill, and reasoning in the domain of streaming media and server-side programming.
 
-###Non Goals
+### Non Goals
     Production/$ services or [devices](https://www.apple.com/shop/product/HL982VC/A/logitech-circle-2-indoor-outdoor-weatherproof-wired-security-camera)
 
-##What
+## What
 
-###Pictures
+### Pictures
     ![Alt Project Sentinel Overview](./ProjectSentinelOverview.png)
     ![Alt Project Sentinel Overview](./FlowView.png)
-###Words
+### Words
     I have a home.
     Video is captured by a camera in my home.
     My camera is connected over USB to an IOT server.
@@ -40,16 +40,16 @@
     I go to a web browser.
     I see my home in the web browser, one page showing the live stream, and another page showing the last 7 days of recorded video.
 
-###Data
+### Data
     If I was building this as a money making service, these are the numbers I would measure. For the ones that I have datapoints to at my fingertips, I've provided the answers, the remaining are left as an exercise to the reader(who at this point in human writing history has to be fit enough to run a 100k with an elephant on her back.) along with hopefully some helpful context as to why they are worth the exercise.
 
-    ####Volume
+#### Volume
         Bytes upladed per hour
             15.64 MB
         Bytes stored/week
             2.57 GB
 
-    ####Latency
+#### Latency
         Video coding pipeline latency
             Capture
                 What is the latency introduced by the IOT platform, USB cord, and WebCam from light in the entrance hitting the camera to it being processed by ffmpeg on the IOT server? A comparasion between an external high accuracy timing device that is in the frame of capture and the time stamp produced by the webcam and ffmpeg as it constructs frames should provide an answer.
@@ -65,13 +65,13 @@
 
                 Serving the assets from the file system to the web client player is the last mile of latency for the VOD pipeline.
 
-    ###Utilization/2xxs
+### Utilization/2xxs
         Bytes out
             How many bytes of stored video is actually viewed? Daily? Weekly?
         Page loads
             How many times do clients try to connect to the live and VOD endpoints?
 
-    ###Cost/5xx
+### Cost/5xx
     (Without these the service endpoints can not process a user request)
         Home - The most variable and highest cost
             Rent
@@ -99,22 +99,25 @@
                     Cloud Server
                         15 minutes
 
-##So
+## So
 
-###Evaluation
+### Evaluation
     Live stream VQ sucks!
         Buy a better camera and more powerful IOT capture platform!
         Tune ffmpeg transcoding parameters?
+
     VOD playout is at 2x!
         Switch to 15fps?
         Ask mc!
+
     Inability to access live stream from device on home wi-fi network!
         Up and to the right! Move live stream web server to cloud.
         Write more Javascript? I'm currently hard coding the address that  live content is streamed from to be the IP of my home Comacast router. In order to view the stream while on wi-fi I have to update the page to point to the IOT devices local network 10.x.x.x address. I'm sure some bit of request inspecting and if/else switch can be used to determine whether to use the local or public ip address of the server.
+
     Unsupervised processes!!
         Buy a 64bit modern IOT device and containerize all the things. The Intel Edison is 32 bit and platforms like Docker don't run on 32 bit hardware. On the cloud server side I could have setup docker or run the bash scripts as systemd services but a.) not being able to do it end to end seemed to defat the point and b.) it's a hobby project. If something is down it will became important only if I look, and if I look, I can fix.
 
-###Fast Follows(PRs welcome)
+### Fast Follows(PRs welcome)
     Eyes on glass alerts; Health checking that the server and the streams are up.
     Door open alerts.
     Identification & time series database of color/light conditions in the entrance.
