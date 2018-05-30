@@ -4,7 +4,7 @@
 
 **what** does it do?
 
-**so**, and than what?
+**so**, and then what?
 
 ## Why
 
