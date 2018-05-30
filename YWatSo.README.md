@@ -132,14 +132,17 @@ Page loads
 
 ### Evaluation
 Live stream VQ sucks!
+
     Buy a better camera and more powerful IOT capture platform!
     Tune ffmpeg transcoding parameters?
 
 VOD playout is at 2x!
+
     Switch to 15fps?
     Ask mc!
 
 Inability to access live stream from device on home wi-fi network!
+
     Up and to the right! Move live stream web server to cloud.
     Write more Javascript?
     I'm currently hard coding the address that  live content is streamed from to be the IP of my home Comacast router.
@@ -147,6 +150,7 @@ Inability to access live stream from device on home wi-fi network!
     I'm sure some bit of request inspecting and if/else switch can be used to determine whether to use the local or public ip address of the server.
 
 Unsupervised processes!!
+
     Buy a 64bit modern IOT device and containerize all the things!
     The Intel Edison is 32 bit and platforms like Docker don't run on 32 bit hardware.
     On the cloud server side I could have setup docker or run the bash scripts as systemd services but a.) not being able to do it end to end seemed to defat the point and b.) it's a hobby project. If something is down it will became important only if I look, and if I look, I can fix.
