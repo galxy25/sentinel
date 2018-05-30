@@ -169,5 +169,6 @@ Identification & time series database of color/light conditions in the entrance.
 Identification & time series database of faces in stream.
 
 A video isn't cool, you know whats cool? Video *and* audio.
+
 Multiple camera feeds - home network operations center.
 
