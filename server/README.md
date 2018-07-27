@@ -13,6 +13,7 @@ Segmenting, Serving, and Sweeping recorded video
         * Allow ssh access to "cloud" server from Sentinel flow service network
         * Allow outbound connections on port 8000
         * Add functions in ./bashrc.sh to ~/.bashrc
+        * source ~/.bashrc
     2. Fertilize
         * Upload ./vod-chop.sh, ./vod-sweep.sh, ./hls-server.js
         * $> cat export HOST_IP=PUBLIC_IP_OF_THE_HOST > ~/.bashrc
