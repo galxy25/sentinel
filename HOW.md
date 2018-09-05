@@ -9,7 +9,7 @@ Run the command below on the IOT server to capture and create two copies of the 
 -r 30 \
 -c:v mpeg1video \
 -f tee \
--map 0:v "[f=mpeg1video]udp://127.0.0.1:2001|[f=mpeg1video]http://127.0.0.1:8082" > /dev/null
+-map 0:v "[f=mpeg1video]udp://127.0.0.1:2001|[f=mpeg1video]http://127.0.0.1:9002" > /dev/null
 ```
 ##Serve Flow
 On the IOT server the flow is served by a web server, the vod playout occurs via a remote computer. The command below takes on of the web cam stream copies and transcodes it to h264 in an mp4 container for eventual HLS playout. Then it uploads this file to the remote server, and garbage collects the file once the upload to the remote server is complete.
@@ -43,12 +43,12 @@ while true; do
   echo "Background uploading live stream recording from $previous_start_time to sentinel.cloud"
   ls *.mp4
   touch "$previous_start_time.lockfile"
-  (echo "Two phase upload in progress" \
+  echo "Two phase upload in progress" \
     && sshpass -p  "XXX" scp "$previous_start_time.lockfile" root@167.99.109.131:/root/ \
     && sshpass -p  "XXX" scp "$previous_start_time.mp4" root@167.99.109.131:/root/ \
     && sshpass -p  "XXX" ssh root@167.99.109.131 "rm $previous_start_time.lockfile" \
     && rm "$previous_start_time.mp4" \
-    && rm "$previous_start_time.lockfile") &
+    && rm "$previous_start_time.lockfile"
 done
 ```
 ##Chop Flow
@@ -115,6 +115,6 @@ The script below is run daily as part of a crontab configured as detailed in ./s
 and deletes any HLS files older than 7 days.
 ```
 #!/bin/bash
-find /root -type f -mmin +10080 | grep -E '*.ts|*.m3u8' | xargs rm
+find /root -type f -mmin +10080 | grep -E '*.ts|*.m3u8|*.mp4|*.lockfile' | xargs rm
 touch /root/vod-sweep.check
 ```

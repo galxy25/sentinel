@@ -52,17 +52,22 @@ bg_door_record
 
 function bg_door_live {
 echo "Backgrounding: "
-echo "Sentinel Live Door edi-cam"
-nohup node /home/root/edi-cam/web/server/server.js > /dev/null 2>&1&
+echo "Sentinel Door Live"
+nohup /home/root/sentinel/sentinel > /dev/null 2>&1&
+echo "Sentinel Door Capture"
+nohup /home/root/sentinel/do_ffmpeg.sh > /dev/null 2>&1&
 }
 
 function grace_kill_door_live {
-echo "Attempting to kill all live-server.js executions"
+echo "Attempting to kill all sentinel server and flow executions"
 echo "Currently running executions: "
-ps | grep '[s]erver/server.js'
-ps | grep '[s]erver/server.js' | awk '{ print $1 }' | xargs kill -2
+ps | grep '[d]o_ffmpeg.sh'
+ps | grep '[s]entinel'
+ps | grep '[d]o_ffmpeg.sh' | awk '{ print $1 }' | xargs kill -2
+ps | grep '[s]entinel' | awk '{ print $1 }' | xargs kill -2
 echo "Currently running executions: "
-ps | grep '[s]erver/server.js'
+ps | grep '[d]o_ffmpeg.sh'
+ps | grep '[s]entinel'
 }
 
 function restart_door_live_view {

@@ -1,0 +1,14 @@
+html {
+    background-color: cadetblue;
+}
+
+.container {
+  margin-top: 10%;
+  text-align: center;
+}
+
+#canvas-video {
+  width: 640px;
+  height: 480px;
+  border: 1px solid #ccc;
+}
