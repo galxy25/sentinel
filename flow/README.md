@@ -10,12 +10,15 @@
 ## Pre-requisites
     Wifi
     AC power outlet
-    Intel Edison with IOT board(Arduino/Intel Breakout)
+    Intel Edison with IOT board (Arduino/Intel Breakout)
     USB UVC compatible camera
     2x Micro-usb cables
-    developer machine
-    domain (this README assumes control of levi.casa)
+    add developer ssh public key to Intel Edison
+    developer computer
     golang 1.11 installed on developer machine
+    cloud computer
+    add Intel Edison ssh public key to remote(cloud machine)
+    Internet domain that you control (this README assumes control of levi.casa)
 
 ## Instructions
     1. Home Base
@@ -24,18 +27,17 @@
     2. Seeds
         * Unzip the ffmpeg archive to /home/root/bin
         * Add functions in ./bashrc.sh to the edison's bashrc and source the augmented bashrc.
-        * Upload ./vod-pipe.sh to home/root
         * Create directory home/root/sentinel
-            ** Upload do_ffmpeg.sh to home/root/sentinel
             ** run make install && make deploy to build and copy over sentinel service to intel edison
     3. River
         * Replace values of XXX in vod-pipe.sh with remote Sentinel server's password or pointer to file containing password
-        * Launch live stream and vod pipelines
+        * Launch live stream and vod pipelines by invoking bashrc functions:
             ** $> bg_door_live
             ** $> bg_vod_pipe
     4. Dam
-        * Update local DNS to route local.sentinel.levi.casa to 10.0.0.XXX
+        * Update local(read: your computer's) DNS to route local.sentinel.levi.casa to 10.0.0.XXX(the local ip address of the intel edison)
         * Update/add remote DNS records for local.sentinel.levi.casa and sentinel.levi.casa to point to the public ip address of your wi-fi router
+        * Update edison's /etc/hosts to route local.sentinel.levi.casa to 127.0.0.1
         * Setup port forwarding to allow for
             ** obtaining ssl certificates
                 *** forward port 80 http from the intel edison

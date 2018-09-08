@@ -9,14 +9,14 @@ Run the command below on the IOT server to capture and create two copies of the 
 -r 30 \
 -c:v mpeg1video \
 -f tee \
--map 0:v "[f=mpeg1video]udp://127.0.0.1:2001|[f=mpeg1video]http://127.0.0.1:9002" > /dev/null
+-map 0:v "[f=mpeg1video]udp://127.0.0.1:2001|[f=mpeg1video]http://127.0.0.1:9001"
 ```
 ##Serve Flow
 On the IOT server the flow is served by a web server, the vod playout occurs via a remote computer. The command below takes on of the web cam stream copies and transcodes it to h264 in an mp4 container for eventual HLS playout. Then it uploads this file to the remote server, and garbage collects the file once the upload to the remote server is complete.
 ```
 #!/bin/bash
 # Record, upload and delete
-# 30 minute segments
+# 5 minute segments
 # of a live stream
 while true; do
   current_start_time="$(date +%F-%H-%M)"
@@ -36,19 +36,20 @@ while true; do
     -b:a 128k \
     "$current_start_time.mp4" > /dev/null 2>&1&
   live_stream_recording_pid=$!
-  sleep 900
+  sleep 300
   kill -2 $live_stream_recording_pid
   sleep 2
   previous_start_time="$current_start_time"
   echo "Background uploading live stream recording from $previous_start_time to sentinel.cloud"
   ls *.mp4
   touch "$previous_start_time.lockfile"
-  echo "Two phase upload in progress" \
-    && sshpass -p  "XXX" scp "$previous_start_time.lockfile" root@167.99.109.131:/root/ \
-    && sshpass -p  "XXX" scp "$previous_start_time.mp4" root@167.99.109.131:/root/ \
-    && sshpass -p  "XXX" ssh root@167.99.109.131 "rm $previous_start_time.lockfile" \
-    && rm "$previous_start_time.mp4" \
-    && rm "$previous_start_time.lockfile"
+  (echo "Two phase upload in progress" \
+    && scp "$previous_start_time.lockfile" root@167.99.109.131:/root/ \
+    && scp "$previous_start_time.mp4" root@167.99.109.131:/root/ \
+    && ssh root@167.99.109.131 "rm $previous_start_time.lockfile"
+    echo "Upload exit status $?"
+    rm "$previous_start_time.mp4"
+    rm "$previous_start_time.lockfile") &
 done
 ```
 ##Chop Flow

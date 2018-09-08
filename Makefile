@@ -25,6 +25,7 @@ deploy: build
 	scp bin/linux_386/sentinel SentinelLocal:~/sentinel
 	scp -r web SentinelLocal:~/sentinel/
 	scp flow/do_ffmpeg.sh SentinelLocal:~/sentinel
+	scp flow/vod-pipe.sh SentinelLocal:~/
 
 clean:
 	rm -rf bin/linux_386

@@ -16,15 +16,28 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"strings"
 	"time"
 )
 
-// options to use when upgrading an http(s)
-// connection to a websocket
+// DNS names for valid sentinel hosts
+var hostNames = []string{"local.sentinel.levi.casa", "sentinel.levi.casa"}
+
+// configuration object to use when
+// upgrading an http(s) connection
+// to a websocket
 var upgrader = websocket.Upgrader{
 	ReadBufferSize:  1024,
 	WriteBufferSize: 1024,
-	CheckOrigin:     func(r *http.Request) bool { return true }, //TODO: only upgrade requests originating from the current host
+	CheckOrigin: func(r *http.Request) (valid bool) {
+		for _, allowedHost := range hostNames {
+			if strings.HasPrefix(r.Host, allowedHost) {
+				valid = true
+				break
+			}
+		}
+		return valid
+	},
 }
 
 // viewer implements functionality for a client to
@@ -57,10 +70,10 @@ func ingress(w http.ResponseWriter, r *http.Request) {
 				log.Println("end of stream")
 				break
 			}
-			log.Println(err)
+			log.Printf("zero ingest error %v\n", err)
 		}
 		if err != nil && err != io.EOF {
-			log.Println(err)
+			log.Printf("ingest error %v\n", err)
 		}
 	}
 }
@@ -71,7 +84,8 @@ func egress(w http.ResponseWriter, r *http.Request) {
 	conn, err := upgrader.Upgrade(w, r, nil)
 	defer conn.Close()
 	if err != nil {
-		log.Println(err)
+		log.Printf("egress upgrade error %v\n", err)
+		w.WriteHeader(http.StatusBadRequest)
 		return
 	}
 	viewerID := fmt.Sprintf("%v@%v", r.RemoteAddr, time.Now().Unix())
@@ -105,19 +119,21 @@ func egress(w http.ResponseWriter, r *http.Request) {
 	}
 	err = conn.WriteMessage(websocket.BinaryMessage, startSequence)
 	if err != nil {
-		log.Println(err)
+		log.Printf("egress send startSequence error: %v\n", err)
 		return
 	}
 	viewers[viewerID] = viewer
+	log.Printf("new viewer: %v viewer count %v\n", viewerID, len(viewers))
 	defer delete(viewers, viewerID)
 	for {
 		err = conn.WriteControl(websocket.PingMessage, []byte{}, time.Now().Add(time.Second))
 		if err != nil {
-			log.Println(err)
+			log.Printf("egress health check error: %v\n", err)
 			break
 		}
 		time.Sleep(500 * time.Millisecond)
 	}
+	log.Printf("viewers: %v\n", viewers)
 }
 
 // broadcast broadcasts the provided data to all current
@@ -142,13 +158,16 @@ func main() {
 	httpd.Handle("/", http.FileServer(http.Dir("./web")))
 	// Handle incoming video
 	manta.HandleFunc("/", ingress)
-	go http.ListenAndServe(":9001", manta)
+	go func() {
+		err := http.ListenAndServe(":9001", manta)
+		log.Printf("mantaServer exited with %v\n", err)
+	}()
 	// Set up automatic X.509 certificate management
 	// via Lets Encrypt.
 	certManager := autocert.Manager{
 		Prompt:     autocert.AcceptTOS,
 		Cache:      autocert.DirCache("tls"),
-		HostPolicy: autocert.HostWhitelist("sentinel.levi.casa", "local.sentinel.levi.casa"),
+		HostPolicy: autocert.HostWhitelist(hostNames...),
 	}
 	rayServer := &http.Server{
 		Addr:    ":9002",
@@ -161,7 +180,10 @@ func main() {
 	ray.HandleFunc("/", egress)
 	// Run http server to respond to ACME http-01 challenges
 	go http.ListenAndServe(":80", certManager.HTTPHandler(nil))
-	go rayServer.ListenAndServeTLS("", "")
+	go func() {
+		err := rayServer.ListenAndServeTLS("", "")
+		log.Printf("rayServer exited with error: %v\n", err)
+	}()
 	webServer := &http.Server{
 		Addr:    ":9000",
 		Handler: httpd,
@@ -171,6 +193,7 @@ func main() {
 	}
 	err := webServer.ListenAndServeTLS("", "")
 	if err != nil {
+		log.Println("webServer exited with error")
 		log.Fatal(err)
 	}
 }
