@@ -4,6 +4,8 @@
 // assumes that HLS segmenter filename base is 'master'
 // and that the HLS playlist and .ts files are in the current directory
 // point Safari browser to http://<hostname>:PORT/player.html
+/*jslint node: true */
+"use strict";
 
 var http = require('http');
 var fs = require('fs');
@@ -11,63 +13,60 @@ var url = require('url');
 var path = require('path');
 var zlib = require('zlib');
 
-PORT = 8000;
-
+var PORT = 8000;
+// Run hls manifest directory and player webserver listening at $PORT
 http.createServer(function (req, res) {
-    var uri = url.parse(req.url).pathname;
+    var uri = url.parse(req.url).pathname,
+        local_ip_address = process.env.HOST_IP,
+        server_address = 'http://' + local_ip_address + ':' + PORT;
 
-    var local_ip_address = process.env.HOST_IP;
-    var server_address = 'http://'+local_ip_address+':'+PORT
-    console.log("Request from: "+local_ip_address);
-    console.log("Request uri: "+uri);
+    console.log("Request from: " + local_ip_address);
+    console.log("Request uri: " + uri);
 
-    if (uri == '/player.html') {
-        var currentDir = './';
-        var manifests = [];
+    if (uri === '/player.html') {
+        var currentDir = './',
+            manifests = [];
 
         fs.readdir(currentDir, function (err, files) {
             manifests = files.filter(function (file) {
-                return file.includes('.m3u8') && !file.includes('out')
+                return file.includes('.m3u8') && !file.includes('out');
             });
             res.writeHead(200, { 'Content-Type': 'text/html' });
             res.write('<html><head><title>Sentinel Door Levi' +
                 '</title></head><body>');
             // Reverse to have the most recent segments on top.
-            manifests = manifests.reverse()
-            first_four = manifests.slice(0,4)
-            remaining = manifests.slice(4)
-            first_four.forEach(function(manifest){
-                var start_time=manifest.split('.m3u8')[0]
+            manifests = manifests.reverse();
+            var first_four = manifests.slice(0, 4),
+                remaining = manifests.slice(4);
+            first_four.forEach(function (manifest) {
+                var start_time = manifest.split('.m3u8')[0];
                 res.write('<div>');
-                res.write('<p>'+start_time+'</p>');
-                res.write('<video src="' + server_address + '/' + manifest+'" controls>');
+                res.write('<p>' + start_time + '</p>');
+                res.write('<video src="' + server_address + '/' + manifest + '" controls>');
                 res.write('</div>');
             });
-            remaining.forEach(function(manifest){
-                var start_time=manifest.split('.m3u8')[0]
+            remaining.forEach(function (manifest) {
+                var start_time = manifest.split('.m3u8')[0];
                 res.write('<div>');
-                res.write('<a target ="_blank" href="'+server_address+'/playAt='+start_time+'">'+ start_time + '</a>');
+                res.write('<a target ="_blank" href="' + server_address + '/playAt=' + start_time + '">' + start_time + '</a>');
                 res.write('</div>');
             });
             res.write('</body></html>');
             res.end();
             return;
         });
-    } else if (uri.includes("playAt=")){
-        manifest_to_play = uri.split('playAt=')[1]
+    } else if (uri.includes("playAt=")) {
+        var manifest_to_play = uri.split('playAt=')[1];
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.write('<html><head><title>Sentinel Door Levi' +
                 '</title></head><body>');
         res.write('<div>');
-        res.write('<p>'+manifest_to_play+'</p>');
-        res.write('<video src="' + server_address + '/' + manifest_to_play+'.m3u8" controls>');
+        res.write('<p>' + manifest_to_play + '</p>');
+        res.write('<video src="' + server_address + '/' + manifest_to_play + '.m3u8" controls>');
         res.write('</div>');
         res.write('</body></html>');
         res.end();
         return;
-    } else
-    {
-        console.log("Unexpected request to: "+uri)
     }
 
     var filename = path.join("./", uri);
@@ -89,13 +88,13 @@ http.createServer(function (req, res) {
                         res.end();
                     } else if (contents) {
                         res.writeHead(200,
-                            {'Content-Type':
-                            'application/vnd.apple.mpegURL'});
+                            {'Content-Type': 'application/vnd.apple.mpegURL'});
                         var ae = req.headers['accept-encoding'];
                         if (ae && ae.match(/\bgzip\b/)) {
                             zlib.gzip(contents, function (err, zip) {
-                                if (err) throw err;
-
+                                if (err) {
+                                    throw err;
+                                }
                                 res.writeHead(200,
                                     {'content-encoding': 'gzip'});
                                 res.end(zip);
