@@ -20,6 +20,9 @@ import (
 	"time"
 )
 
+// The password needed to view any streams
+var streamPassword string
+
 // DNS names for valid sentinel hosts
 var hostNames = []string{"local.sentinel.levi.casa", "sentinel.levi.casa"}
 
@@ -81,6 +84,14 @@ func ingress(w http.ResponseWriter, r *http.Request) {
 // egress handles requests and setup for egressing (outputting)
 // of sentinel content.
 func egress(w http.ResponseWriter, r *http.Request) {
+	queryParams := r.URL.Query()
+	userPassword := queryParams["password"][0]
+	// Not constant time 😬
+	if userPassword != streamPassword {
+		log.Printf("unauthorized egress request %+v , returning 404\n", r)
+		w.WriteHeader(http.StatusUnauthorized)
+		return
+	}
 	conn, err := upgrader.Upgrade(w, r, nil)
 	defer conn.Close()
 	if err != nil {
