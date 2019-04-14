@@ -12,24 +12,23 @@ var fs = require('fs');
 var url = require('url');
 var path = require('path');
 var zlib = require('zlib');
+var util = require('util');
 
 var PORT = 8000;
 // Run hls manifest directory and player webserver listening at $PORT
+// This server sits behind a reverse proxy that terminates tls
 http.createServer(function (req, res) {
     var uri = url.parse(req.url).pathname,
-        local_ip_address = process.env.HOST_IP,
-        server_address = 'http://' + local_ip_address + ':' + PORT;
-
-    console.log("Request from: " + local_ip_address);
-    console.log("Request uri: " + uri);
-
-    if (uri === '/player.html') {
+        server_address = 'https://www.levi.casa/vod',
+        password = req.url.split("?password=")[1];
+    console.log("Request: " + util.inspect(req.headers, {depth: null}) + "\n" + req.method + "\n" + req.url + "\n" + uri);
+    if (uri === '/vod/') {
         var currentDir = './',
             manifests = [];
 
         fs.readdir(currentDir, function (err, files) {
             manifests = files.filter(function (file) {
-                return file.includes('.m3u8') && !file.includes('out');
+                return file.includes('.m3u8');
             });
             res.writeHead(200, { 'Content-Type': 'text/html' });
             res.write('<html><head><title>Sentinel Door Levi' +
@@ -42,19 +41,20 @@ http.createServer(function (req, res) {
                 var start_time = manifest.split('.m3u8')[0];
                 res.write('<div>');
                 res.write('<p>' + start_time + '</p>');
-                res.write('<video src="' + server_address + '/' + manifest + '" controls>');
+                res.write('<video src="' + server_address + '/' + manifest + "?password=" + password + '" controls>');
                 res.write('</div>');
             });
             remaining.forEach(function (manifest) {
                 var start_time = manifest.split('.m3u8')[0];
                 res.write('<div>');
-                res.write('<a target ="_blank" href="' + server_address + '/playAt=' + start_time + '">' + start_time + '</a>');
+                res.write('<a target ="_blank" href="' + server_address + '/playAt=' + start_time + "?password=" + password + '">' + start_time + '</a>');
                 res.write('</div>');
             });
             res.write('</body></html>');
             res.end();
             return;
         });
+        return;
     } else if (uri.includes("playAt=")) {
         var manifest_to_play = uri.split('playAt=')[1];
         res.writeHead(200, { 'Content-Type': 'text/html' });
@@ -62,14 +62,25 @@ http.createServer(function (req, res) {
                 '</title></head><body>');
         res.write('<div>');
         res.write('<p>' + manifest_to_play + '</p>');
-        res.write('<video src="' + server_address + '/' + manifest_to_play + '.m3u8" controls>');
+        res.write('<video src="' + server_address + '/' + manifest_to_play + '.m3u8' + "?password=" + password + '" controls>');
         res.write('</div>');
         res.write('</body></html>');
         res.end();
         return;
     }
-
-    var filename = path.join("./", uri);
+    // HAXXX
+    // case 1
+    // url /vod/2019-04-14-01-06-out.m3u8?password=baoBao
+    // uri /vod/2019-04-14-01-06-out.m3u8
+    // sending file: 2019-04-14-01-06-out.m3u8
+    var filename = path.join("./", uri.split("/vod")[1]);
+    // case 2
+    // url /vod/2019-04-14-01-06-door-1555204267.ts?password=baoBao
+    // uri /vod/2019-04-14-01-06-door-1555204267.ts
+    // file not found: 2019-04-14-01-06-door-1555204267.ts
+    if (filename.includes(".ts")) {
+        filename = filename + "?password=" + password;
+    }
     fs.exists(filename, function (exists) {
         if (!exists) {
             console.log('file not found: ' + filename);
