@@ -39,8 +39,8 @@ function list_pick_lock_segment_sweep_it() {
         -hls_playlist_type vod \
         -hls_time 6 \
         -use_localtime 1 \
-        -hls_segment_filename "$video_start_timestamp-door-%s.ts" \
-        -master_pl_name "$video_start_timestamp.m3u8" \
+        -hls_segment_filename "$video_start_timestamp-door-%s.ts?password=$VOD_PASSWORD" \
+        -hls_segment_type mpegts \
         "$video_start_timestamp-out.m3u8" 2>&1 | logger
     #Sweep it
     rm "$video_start_timestamp.mp4"
